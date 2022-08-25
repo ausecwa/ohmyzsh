@@ -135,9 +135,9 @@ fi
 
 if (( $+commands[trizen] )); then
   alias trconf='trizen -C'
-  alias trupg='trizen -Syua'
-  alias trsu='trizen -Syua --noconfirm'
-  alias trin='trizen -S'
+  alias trupg='trizen -Syyu --no{edit,info}'
+  alias trupga='trizen -Syyua --no{edit,info}'
+  alias trin='trizen -Sy --needed --no{edit,info}'
   alias trins='trizen -U'
   alias trre='trizen -R'
   alias trrem='trizen -Rns'
